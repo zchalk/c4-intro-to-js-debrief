@@ -9,7 +9,19 @@
 // Reference Codecademy lessons: Introduction- Arithmetic Opertaors, Conditional Statements lessons 3, 4, 5,and 9
 
 //Write your code for GenBuzz below this line:
-
+let myNumber = 15;
+console.log(typeof myNumber);
+if (!(typeof myNumber === 'number')) {
+    console.log('This is not a number');
+} else if ((myNumber % 3 === 0) && (myNumber % 5 === 0)) {
+    console.log('Genbuzz');
+} else if (myNumber % 3 === 0) {
+    console.log("Gen");
+} else if (myNumber % 5 === 0) {
+    console.log('Buzz');
+} else {
+    console.log('myNumber');
+}
 
 
 
@@ -28,8 +40,20 @@
 // If the variable input is not an item in the store, then print 'Invalid Item' to the console.
 
 //Write your code for the E-Commerce item list below this line:
+let items = 'Shoes';
 
-
+switch (items) {
+    case 'Shoes': console.log('$50');
+            break;
+    case 'Jeans': console.log('$25');
+        break;
+    case 'Hat': console.log('$12');
+        break;
+    case 'Socks': console.log('$2');
+        break;
+    default:
+        console.log('Invalid item')
+}
 
 
 //3. Print a random integer (whole number) between 50(inclusive) and 100(exclusive) to the console
@@ -37,5 +61,7 @@
 
 //Write your code below this line:
 
-
+let randomNumber;
+randomNumber = Math.floor(Math.random() * 50 + 50);
+console.log(randomNumber);
 
