@@ -10,22 +10,28 @@
 
 //Write your code for GenBuzz below this line:
 
-let myNumber;
-myNumber = prompt('Enter the number');
-
+// Create variable myNumber
+var myNumber = prompt('Enter the number');
+// Check that the value of the myNumber is of type number
 if(isNaN(myNumber)){
-
-//if (typeof myNumber == 'number'){
 	console.log(myNumber + " is not a number");
+    // If the value of myNumber is any other number print the value of myNumber to the console.  
+}else if(!(myNumber % 3 && myNumber % 5 )){
+    console.log(myNumber + " is my number");
+// If the value of myNumber is a multiple of both 3 and 5 (ex. 15) print GenBuzz to the console
    }else if( myNumber % 3 && myNumber % 5 ){
-        console.log("GenBuzz");    
+        console.log("GenBuzz");
+// If value of myNumber is a multiple of 3 print 'Gen' to the console    
    }else if ( myNumber % 3 == 0 ){
         console.log("Gen");
+ // If value of myNumber is a multiple of 5 print 'Buzz' to the console       
     }else if ( myNumber % 5 == 0 ){ 
-        console.log("Buzz");  
-    }else {
-    console.log(myNumber + " is my number");
-    }
+        console.log("Buzz");
+    }11
+        // If the value of myNumber is any other number print the value of myNumber to the console.  
+    // }else {(!myNumber % 3 && !myNumber % 5 )
+    // console.log(myNumber + " is my number");
+    // }
      //line breaks to enhance output readability
 
 
@@ -44,9 +50,9 @@ if(isNaN(myNumber)){
 //Write your code for the E-Commerce item list below this line:
 
 //let favDrink;
-let item = "";
-item = prompt('Enter item name');
-switch($(item).val().toLowerCase()) {
+var item = prompt('Enter item name');
+item = item.toLowerCase();
+switch(item) {
     case "shoes":
     console.log("Shoes are $50")
     break;
@@ -75,5 +81,5 @@ switch($(item).val().toLowerCase()) {
 1 and 10 */
 console.log(Math.floor(Math.random() * (100-50+1) + 50)); //the + 1 makes it so its not 0.
 
-
-
+// var output = document.getElementById("output");
+// output.innerHTML = item;
