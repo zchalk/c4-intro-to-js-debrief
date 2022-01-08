@@ -10,14 +10,31 @@
 
 //Write your code for GenBuzz below this line:
 
-/*let myNumber 
+let myNumber = 14
 
-if (myNumber === !Number)  {
-    console.log('This is not a number')
-} else if (myNumber === !Number) 
-*/
+if (typeof myNumber === 'Number')  {
+    console.log(myNumber + 'is a number')
+} else { 
+    (myNumber + 'is not a number')
+}
 
-
+if (myNumber %3 === 0) {
+        console.log('Gen')
+    }
+    else if
+    (myNumber %5 === 0) {
+        console.log('Buzz')
+    }
+    else  if 
+    (myNumber %5 === 0) {   
+        console.log('Buzz')
+    }
+    else if 
+    (myNumber %5 === 0 && myNumber %5 === 0) {    
+        console.log('GenBuzz')
+    }
+    else 
+        console.log ('myNumber')
 
 
 
