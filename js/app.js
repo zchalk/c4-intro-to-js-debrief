@@ -9,8 +9,14 @@
 // Reference Codecademy lessons: Introduction- Arithmetic Opertaors, Conditional Statements lessons 3, 4, 5,and 9
 
 //Write your code for GenBuzz below this line:
-
-
+var myNumber = 'number';
+let myNumber ;
+console.log('This is not a mumber');
+console.log(3*5);
+console.log(4*5);
+console.log(3*5);
+let myNumber = 8
+console.log(myNumber);
 
 
 
@@ -29,6 +35,26 @@
 
 //Write your code for the E-Commerce item list below this line:
 
+let price = $50;
+ 
+switch(price) {
+    case 'shoes':
+      console.log("$50");
+      break;
+     case 'Jeans':
+       console.log("$25");
+       break;
+       case 'Hat':
+        console.log("$12"); 
+        break; 
+        case 'Socks':
+       console.log("$2");
+       break;
+       default:
+         console.log('No value found')
+}
+console.log('invalid Item');
+
 
 
 
@@ -37,5 +63,9 @@
 
 //Write your code below this line:
 
-
+function getRandomInt(min, max) {
+  min =Math.ceil(min);
+  max = Math. floor(max);
+  return Math.floor(Math.random() * (mas - min) + min);
+}
 
